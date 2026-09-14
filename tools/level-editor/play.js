@@ -220,6 +220,7 @@ function advancePlay(dt){
   offset=Math.max(offset,clamp(p.y-337,0,state.height-H));
  }else{
   advanceBrownLeaves(dt);
+  const screenBottom=publicPlay?Campaign.visibleBottom():offset-32;
   if(p.ground){p.y=leafSurface(p.ground,p.x+(p.landingFoot||0))??p.y;p.perchTime+=dt;if(p.gesture&&p.perchTime>=p.gesture.frames/50){p.lastGesture=p.gesture.name;p.gesture=null;}}
   else{const oldX=p.x,oldY=p.y;p.vx+=(p.tilt*155-p.vx)*(1-Math.exp(-dt*6));p.x=clamp(p.x+p.vx*dt,7,W-7);p.vy-=500*dt;if(held.has('Space')&&p.vy<0)p.vy=Math.max(p.vy,-65);p.y+=p.vy*dt;
    if(p.vy<=0){
@@ -231,14 +232,14 @@ function advancePlay(dt){
      // body's centre cannot move any farther. Keep contact on its painted edge.
      for(const foot of centre===null&&leaf.plant?[-9,9]:[0]){
       const top=foot?leafSurface(leaf,p.x+foot):centre,oldTop=leafSurface(leaf,oldX+foot);
-      if(top!==null&&oldY>=(oldTop??top)&&p.y<=top&&(!landing||top>landing.top))landing={leaf,top,foot};
+      if(top!==null&&(!publicPlay||top>=screenBottom)&&oldY>=(oldTop??top)&&p.y<=top&&(!landing||top>landing.top))landing={leaf,top,foot};
      }
     }
     if(landing){p.y=landing.top;p.vy=0;p.vx=0;p.ground=landing.leaf;p.landingFoot=landing.foot;p.animation=null;}
    }
   }
   if(p.y-offset>430){const camera=clamp(p.y-260,offset,state.height-H);offset+= (camera-offset)*(1-Math.exp(-dt*5));}
-  if(p.y<offset-32){if(publicPlay)Campaign.fail();else restartPlay();return;}
+  if(p.y<screenBottom){if(publicPlay)Campaign.fail();else restartPlay();return;}
  }
  p.maxY=Math.max(p.maxY,p.y);for(const o of state.objects)if(o.type==='pod'&&o.asset==='pod-tawny'&&o.falls&&!o.hidden&&!p.falls.has(o.id)&&p.y>=o.y-o.approach)p.falls.set(o.id,sceneClock);
  Campaign.advanceRain(dt);

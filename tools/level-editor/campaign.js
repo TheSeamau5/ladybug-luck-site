@@ -15,7 +15,7 @@ const Campaign = {
       this.layoutObserver.observe(view);this.observedLayouts.add(view);
     }
     const rect=view.getBoundingClientRect(),width=rect.width,height=rect.height;
-    if(!width||!height)return {x:0,y:0,scale:1};
+    if(!width||!height)return {x:0,y:0,scale:1,bottomCrop:0};
     const style=window.getComputedStyle?.(view),inset=side=>parseFloat(style?.getPropertyValue('padding-'+side))||0;
     const top=inset('top'),right=inset('right'),bottom=inset('bottom'),left=inset('left');
     const key=[width,height,top,right,bottom,left].join(':');
@@ -26,10 +26,11 @@ const Campaign = {
     const uiScale=Math.min((width-left-right)/W,(height-top-bottom)/H);
     const uiWidth=W*uiScale,uiHeight=H*uiScale,uiX=left+(width-left-right-uiWidth)/2,uiY=top+(height-top-bottom-uiHeight)/2;
     for(const [name,value] of Object.entries({'scene-x':sceneX,'scene-y':sceneY,'scene-width':sceneWidth,'scene-height':sceneHeight,'ui-x':uiX,'ui-y':uiY,'ui-width':uiWidth,'ui-height':uiHeight}))view.style.setProperty('--'+name,value+'px');
-    const layout={key,x:(uiX-sceneX)/sceneScale,y:(uiY-sceneY)/sceneScale,scale:uiScale/sceneScale};
+    const layout={key,x:(uiX-sceneX)/sceneScale,y:(uiY-sceneY)/sceneScale,scale:uiScale/sceneScale,bottomCrop:Math.max(0,H-(height-sceneY)/sceneScale)};
     this.layouts.set(view,layout);return layout;
   },
   uiLayout(){return this.fitSurface($('stage'));},
+  visibleBottom(){return offset+this.uiLayout().bottomCrop;},
   placeUI(g){const view=this.uiLayout();g.translate(view.x,view.y);g.scale(view.scale,view.scale);},
   read(){
     try {
@@ -448,7 +449,7 @@ const Campaign = {
         p.flightGesture={name:'rider-breeze',start:sceneClock,end:sceneClock+4.5,entry:0};
       }else if(p.vy<0&&p.y<=this.opening().y&&Math.abs(p.x-this.opening().x)<28){
         p.ground=this.opening();p.y=p.ground.y;p.vy=0;p.vx=0;
-      }else if(p.y<-40)this.fail();
+      }else if(p.y<this.visibleBottom())this.fail();
       return true;
     }
     if(state.mode==='flight'&&p.seedStage==='boarding'){
@@ -503,7 +504,8 @@ const Campaign = {
       pieces.push({image,name:group.name,x:group.left,y:group.top,cx:image.width/2,cy:image.height/2});
     }
     const body=pieces.find(p=>p.name==='body'),direction=(hit.x??p.x)>=p.x?-1:1;
-    p.defeat={hit:{x:hit.x??p.x,y:hit.y??sy(p.y),kind:hit.kind||'fall'},pieces,direction,retryAt:clamp(Math.sqrt(Math.max(0,H+45-(body?.y??H))/245)+.35,1.4,2.35)};
+    const kind=hit.kind||'fall';
+    p.defeat={hit:{x:hit.x??p.x,y:hit.y??sy(p.y),kind},pieces,direction,retryAt:kind==='fall'?.55:clamp(Math.sqrt(Math.max(0,H+45-(body?.y??H))/245)+.35,1.4,2.35)};
   },
   drawDefeat(target){
     const p=playState,d=p.defeat,t=p.failureAge;if(!d)return;
