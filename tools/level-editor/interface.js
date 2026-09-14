@@ -3,6 +3,7 @@
 let page='edit',panel=null,placement=null,focusMode=false,multiSelectMode=false;
 let lastSelection='',selectionUIFrame=0,levelPointer=null,reorderFrame=0;
 let inputMode='none',tiltSteering=0,tiltZero=null,tiltEnabled=false,tiltSample=null,tiltLastSignal=0;
+let controlsFirstPlay=false,controlsDismissTimer=0;
 const touchPoints=new Map(),editPointers=new Set();
 const isPhone=()=>window.matchMedia('(max-width:760px)').matches;
 const uiButton=(id,fn)=>{$(id).onclick=fn;};
@@ -166,6 +167,31 @@ const undoLevels=button('Undo',()=>{editHistory(true);buildCards();},$('file-men
 // Controls affect the existing movement simulation; touch never reserves screen space.
 function touchDirection(){return inputMode==='tilt'&&performance.now()-tiltLastSignal<500?tiltSteering:0;}
 function releaseTouch(){touchPoints.clear();held.delete('Space');tiltSteering=0;tiltZero=null;tiltSample=null;}
+function hideControls(){
+ clearTimeout(controlsDismissTimer);controlsDismissTimer=0;controlsFirstPlay=false;
+ $('controls-panel').hidden=true;$('controls-panel').classList.remove('closing');
+}
+function showControls(firstPlay=false){
+ const p=playState;if(!p||p.complete||p.failed)return;
+ hideControls();controlsFirstPlay=firstPlay;p.paused=true;held.clear();releaseTouch();lastTick=0;
+ const phone=navigator.maxTouchPoints>0;
+ $('controls-jump').textContent=phone?'Tap to jump':'Space to jump';
+ $('controls-hover').textContent=phone?'Hold to hover':'Hold Space to hover';
+ $('controls-steer').textContent=phone?'Sway left / right':'Left / Right or A / D';
+ $('controls-panel').hidden=false;updatePlayInterface();
+ requestAnimationFrame(()=>{if(!$('controls-panel').hidden)$('controls-dismiss').focus({preventScroll:true});});
+}
+function dismissControls(){
+ if($('controls-panel').hidden||controlsDismissTimer)return;
+ const firstPlay=controlsFirstPlay;
+ if(firstPlay){Campaign.progress.controlsSeen=true;Campaign.persist();}
+ $('controls-panel').classList.add('closing');
+ controlsDismissTimer=setTimeout(()=>{
+  hideControls();if(!playState)return;
+  playState.paused=!firstPlay;held.clear();releaseTouch();lastTick=0;updatePlayInterface();
+  (firstPlay?canvas:$('pause-controls')).focus({preventScroll:true});
+ },160);
+}
 function jumpPress(){if((publicPlay?Campaign.canJump():state.mode==='climb'&&playState&&!playState.paused)){if(playState.ground){playState.ground=null;playState.vy=470;}held.add('Space');}}
 canvas.addEventListener('pointerdown',e=>{
  if(!preview||playState?.paused||playState?.intro||playState?.failed||playState?.complete||e.pointerType==='mouse')return;
@@ -178,7 +204,8 @@ for(const event of ['pointerup','pointercancel','lostpointercapture'])window.add
 for(const event of ['selectstart','contextmenu','dragstart'])document.addEventListener(event,e=>{if(document.body.classList.contains('campaign'))e.preventDefault();});
 function updatePlayInterface(){
  const p=playState;if(!p)return;
- $('pause-panel').hidden=!p.paused||p.complete||p.failed;$('editor-main').inert=p.paused&&!p.complete;$('play-controls').inert=p.paused&&!p.complete;$('mobile-pause').hidden=!preview||p.complete||p.failed||!!p.intro;$('keyboard-help').hidden=!preview||publicPlay;
+ const controlsOpen=!$('controls-panel').hidden;
+ $('pause-panel').hidden=!p.paused||p.complete||p.failed||controlsOpen;$('editor-main').inert=p.paused&&!p.complete;$('play-controls').inert=p.paused&&!p.complete;$('mobile-pause').hidden=!preview||p.complete||p.failed||!!p.intro||controlsOpen;$('keyboard-help').hidden=!preview||publicPlay;
  $('pause-editor-details').hidden=publicPlay;$('pause-editor-actions').hidden=publicPlay;$('pause-main-menu').hidden=!publicPlay;
  $('pause-restart').textContent=publicPlay?'Restart':'Restart level';
  $('pause-level').textContent=state.name;$('touch-help').textContent=testInstructions();
@@ -191,6 +218,7 @@ function updatePlayInterface(){
  $('pause-edit').hidden=page==='test';$('full-play').hidden=page==='test'||editorView?.full!==false;
 }
 uiButton('mobile-pause',pausePlay);uiButton('resume-play',pausePlay);uiButton('pause-restart',restartPlay);
+uiButton('pause-controls',()=>showControls());uiButton('controls-dismiss',dismissControls);
 uiButton('pause-main-menu',()=>Campaign.showWelcome());
 uiButton('pause-edit',stopPlay);uiButton('pause-levels',()=>showLevels(true,page==='test'));
 uiButton('full-play',()=>{stopPlay();startPlay(true);});
@@ -219,7 +247,7 @@ window.addEventListener('deviceorientation',e=>{
   tiltSteering=0;if(now-tiltSample.start<250)return;
   tiltZero=tiltSample.mean;$('control-notice').textContent='Tilt is centred. Lean left or right to steer.';
  }
- const lean=value-tiltZero;
+ const lean=tiltZero-value;
  tiltSteering=Math.sign(lean)*clamp((Math.abs(lean)-2.5)/15.5);
 });
 window.addEventListener('orientationchange',releaseTouch);
@@ -257,7 +285,7 @@ Campaign.init();
 
 for(const event of ['pointerup','pointercancel'])window.addEventListener(event,e=>editPointers.delete(e.pointerId));
 window.addEventListener('keydown',e=>{
- if(e.key!=='Tab')return;const modal=!$('pause-panel').hidden?$('pause-panel'):!$('test-start').hidden?$('test-start'):!$('completion').hidden?$('completion'):null;
+ if(e.key!=='Tab')return;const modal=!$('controls-panel').hidden?$('controls-panel'):!$('pause-panel').hidden?$('pause-panel'):!$('test-start').hidden?$('test-start'):!$('completion').hidden?$('completion'):null;
  if(!modal)return;const focusable=[...modal.querySelectorAll('button,input,select,textarea,a')].filter(el=>!el.hidden&&!el.disabled);if(!focusable.length)return;
  const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
 });

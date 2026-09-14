@@ -4,7 +4,7 @@
 // simulation, scenery renderer, sprites and puzzle. Editor drafts stay separate.
 const Campaign = {
   key:'ladybug-player-progress-v1', screen:null, menuTime:0, lastMenuTick:0,
-  base:'assets/campaign/', progress:{playedOnce:false,completed:{}}, visitors:[],
+  base:'assets/campaign/', progress:{playedOnce:false,controlsSeen:false,completed:{}}, visitors:[],
   layouts:new WeakMap(),
   observedLayouts:new WeakSet(),
   forestNames:['forest-trunk-0',...EDITOR_LIBRARY.forestTiles.map(p=>p.name),...EDITOR_LIBRARY.forestFlowers.filter(f=>f.section===0&&f.y<717).map(f=>f.asset)],
@@ -34,11 +34,11 @@ const Campaign = {
   read(){
     try {
       const saved=JSON.parse(localStorage.getItem(this.key)||'{}');
-      this.progress={playedOnce:saved.playedOnce===true,completed:{}};
+      this.progress={playedOnce:saved.playedOnce===true,controlsSeen:saved.controlsSeen===true,completed:{}};
       for(const [id,result] of Object.entries(saved.completed||{})) {
         if(result&&Number.isFinite(result.best))this.progress.completed[id]={best:Math.max(0,result.best)};
       }
-    } catch { this.progress={playedOnce:false,completed:{}}; }
+    } catch { this.progress={playedOnce:false,controlsSeen:false,completed:{}}; }
   },
   persist(){
     if(!publicPlay)return;
@@ -392,6 +392,7 @@ const Campaign = {
     p.seedOffset=editorView.clock;
     p.seedStage=state.mode==='flight'?'flower':null;p.failed=false;p.failureAge=0;p.finishAge=0;p.results=false;
     p.previousLyrics=new Set(PuzzleLevel.owned());
+    p.controlsPending=!this.progress.controlsSeen;
     this.progress.playedOnce=true;this.persist();
     $('campaign-retry').hidden=true;$('campaign-menu').hidden=true;$('campaign-selector').hidden=true;
     $('keyboard-help').hidden=true;$('game-hud').hidden=true;
@@ -434,6 +435,7 @@ const Campaign = {
       }
       return true;
     }
+    if(p.controlsPending){p.controlsPending=false;showControls(true);return true;}
     if(state.mode==='flight'&&p.seedStage==='flower'){
       p.time+=dt;sceneClock+=dt;
       const target=Number(held.has('ArrowRight')||held.has('KeyD'))-Number(held.has('ArrowLeft')||held.has('KeyA'))||touchDirection();

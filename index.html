@@ -8,7 +8,7 @@
   <base href="/tools/level-editor/">
   <title>Ladybug Luck · Editor</title>
   <script>document.documentElement.dataset.entry=location.pathname.startsWith('/puzzle')?'puzzle':location.pathname.startsWith('/test')?'test':location.pathname.startsWith('/levels')?'levels':'editor';</script>
-  <link rel="stylesheet" href="style.css?v=pause-menu-1">
+  <link rel="stylesheet" href="style.css?v=controls-1">
   <link rel="stylesheet" href="puzzle.css?v=11" >
   <link rel="stylesheet" href="campaign.css?v=phone-flow-1">
 </head>
@@ -98,12 +98,24 @@
     <div id="pause-editor-details" class="pause-editor-group" hidden><p id="pause-level"></p><div class="tabs" aria-label="Steering mode"><button id="tilt-mode" aria-pressed="false">Centre phone</button></div><p id="touch-help"></p><p id="control-notice" role="status"></p></div>
     <button id="resume-play" class="primary">Resume</button>
     <button id="pause-restart">Restart</button>
+    <button id="pause-controls">Controls</button>
     <button id="pause-main-menu">Main menu</button>
     <div id="pause-editor-actions" class="pause-editor-group" hidden><button id="full-play">Play from start</button><button id="pause-edit">Back to edit</button><button id="pause-levels">Levels</button></div>
   </div>
 </div>
+<div id="controls-panel" role="dialog" aria-modal="true" aria-labelledby="controls-title" aria-describedby="controls-copy" hidden>
+  <div class="controls-sheet">
+    <h1 id="controls-title">Controls</h1>
+    <div id="controls-copy">
+      <p id="controls-jump">Tap to jump</p>
+      <p id="controls-hover">Hold to hover</p>
+      <p><span id="controls-steer">Sway left / right</span><br>to move in the air</p>
+    </div>
+    <button id="controls-dismiss">Got it</button>
+  </div>
+</div>
 <div id="test-start" hidden><div class="pause-sheet"><strong>LADYBUG LUCK</strong><h1 id="test-level-name"></h1><p id="test-help"></p><button id="test-begin" class="primary" disabled>Loading artwork…</button><button id="test-levels">Choose a level</button></div></div>
 <script src="assets/leaf-material.js?v=4"></script><script src="assets/catalog.js?v=flower-landings-detail-1"></script>
-<script src="scene.js?v=phone-flow-1"></script><script src="colliders.js?v=flower-landings-detail-1"></script><script src="paper.js?v=phone-flow-1"></script><script src="editor.js?v=leaf-joins-2"></script><script src="play.js?v=flower-landings-detail-1"></script><script src="puzzle-scenery.js?v=2"></script><script src="puzzle.js?v=pause-menu-1"></script><script src="campaign.js?v=leaf-joins-2"></script><script src="interface.js?v=phone-motion-2"></script>
+<script src="scene.js?v=phone-flow-1"></script><script src="colliders.js?v=flower-landings-detail-1"></script><script src="paper.js?v=phone-flow-1"></script><script src="editor.js?v=leaf-joins-2"></script><script src="play.js?v=controls-1"></script><script src="puzzle-scenery.js?v=2"></script><script src="puzzle.js?v=pause-menu-1"></script><script src="campaign.js?v=controls-1"></script><script src="interface.js?v=controls-1"></script>
 </body>
 </html>

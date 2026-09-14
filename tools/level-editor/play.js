@@ -19,6 +19,7 @@ function makeStart(full){
  return {x:leafLandingX(leaf),y:leafSurface(leaf,leafLandingX(leaf)),offset:full?clamp(leaf.y-220,0,state.height-H):offset,leaf};
 }
 function restartPlay(){
+ if(typeof hideControls==='function')hideControls();
  if(!editorView)return;held.clear();if(typeof releaseTouch==='function')releaseTouch();const s=editorView.start;
  if(publicPlay&&!Campaign.ready()){Campaign.pendingRestart=true;Campaign.prepareArt();return;}
  playState={x:s.x,y:s.y,maxY:s.y,vx:0,vy:0,tilt:0,ground:s.leaf,pose:'',perchTime:0,gesture:null,gestureCount:0,flightGesture:null,steerSide:0,time:0,paused:false,complete:false,collected:new Set(),pickups:[],displayedLyrics:0,counterPulse:0,falls:new Map(),contacts:new Set(),contactAt:-10,contactId:null};
@@ -39,12 +40,14 @@ function startPlay(full=false){
  syncColliderTools();restartPlay();canvas.focus({preventScroll:true});playFrame=requestAnimationFrame(tickPlay);
 }
 function stopPlay(){
+ if(typeof hideControls==='function')hideControls();
  if(!preview)return;$('lyric-score').classList.remove('received');const reached=offset,contactId=playState?.contactId;preview=false;cancelAnimationFrame(playFrame);held.clear();playState=null;document.body.classList.remove('preview');$('editor-main').inert=false;$('play-controls').inert=false;if(typeof releaseTouch==='function')releaseTouch();$('pause-panel').hidden=true;$('mobile-pause').hidden=true;$('keyboard-help').hidden=true;
  for(const el of [$('tray'),$('inspector'),$('undo'),$('redo'),$('extend'),$('overview'),$('levels-toggle'),$('files-toggle'),$('motion-toggle')])el.inert=false;
  $('preview').textContent='Play';$('full-play').hidden=false;$('play-controls').hidden=true;$('game-hud').hidden=true;$('completion').hidden=true;offset=reached;selected=new Set(contactId?[contactId]:editorView.selection);selection=[...selected].at(-1)||null;if(typeof openPanel==='function')openPanel(selected.size?'selection':null);sync();syncScene();request();
 }
 
 function pausePlay(){
+ if(!$('controls-panel').hidden){dismissControls();return;}
  if(!playState||playState.complete||playState.failed||playState.intro)return;
  playState.paused=!playState.paused;held.clear();if(typeof releaseTouch==='function')releaseTouch();lastTick=0;
  $('pause-play').textContent=playState.paused?'Resume':'Pause';
@@ -254,6 +257,12 @@ function tickPlay(time){
 $('preview').onclick=()=>preview?stopPlay():startPlay(false);$('full-play').onclick=()=>startPlay(true);$('pause-play').onclick=pausePlay;$('restart').onclick=restartPlay;$('edit-here').onclick=stopPlay;$('completion-restart').onclick=restartPlay;$('completion-edit').onclick=stopPlay;
 window.addEventListener('keydown',e=>{
  if(document.body.classList.contains('puzzle-open'))return;
+ if(e.metaKey||e.ctrlKey||e.altKey)return;
+ if(!$('controls-panel').hidden){
+  if(['Escape','KeyP','Enter','Space'].includes(e.code)){e.preventDefault();e.stopImmediatePropagation();if(!e.repeat)dismissControls();}
+  else if(['ArrowLeft','ArrowRight','KeyA','KeyD','KeyR'].includes(e.code)){e.preventDefault();e.stopImmediatePropagation();}
+  return;
+ }
  if(!preview||e.metaKey||e.ctrlKey||e.altKey)return;if(playState?.paused&&hasInputFocus(e)&&!['Escape','KeyP','KeyR'].includes(e.code))return;if(!['Space','ArrowLeft','ArrowRight','KeyA','KeyD','KeyR','KeyP','Escape'].includes(e.code))return;e.preventDefault();e.stopImmediatePropagation();
  if(e.code==='Escape'){if(typeof page!=='undefined'&&page==='test')pausePlay();else stopPlay();return;}if(e.code==='KeyR'){if(!e.repeat)restartPlay();return;}if(e.code==='KeyP'){if(!e.repeat)pausePlay();return;}if(playState.paused||playState.failed||playState.complete||playState.intro)return;
  if(e.code==='Space'&&(state.mode==='climb'||playState.seedStage==='flower')&&!held.has('Space')&&playState.ground){playState.ground=null;playState.vy=470;}held.add(e.code);
