@@ -1,0 +1,27 @@
+#puzzle-level { position:fixed; inset:0; z-index:100; display:grid; place-items:center; background:#0b2035; overflow:hidden; }
+#puzzle-view { position:relative; width:min(100vw,calc(100dvh * 330 / 717)); height:min(100dvh,calc(100vw * 717 / 330)); overflow:hidden; padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); background:#15364a url('assets/puzzle/poster.png') center/cover; color:#fff4d3; }
+#puzzle-background { position:absolute; left:var(--scene-x,0); top:var(--scene-y,0); width:var(--scene-width,100%); height:var(--scene-height,100%); }
+#puzzle-canvas { position:absolute; left:var(--ui-x,0); top:var(--ui-y,0); width:var(--ui-width,100%); height:var(--ui-height,100%); }
+#puzzle-background { pointer-events:none; image-rendering:auto; }
+#puzzle-canvas { touch-action:none; cursor:grab; outline-offset:-4px; }
+#puzzle-canvas:active { cursor:grabbing; }
+#puzzle-canvas.puzzle-restored { cursor:default; }
+#puzzle-heading { position:absolute; top:max(18px,env(safe-area-inset-top)); left:5%; right:5%; pointer-events:none; text-shadow:2px 2px 0 #12243a,-1px -1px 0 #12243a; }
+.puzzle-top { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+#puzzle-heading button { pointer-events:auto; font-size:14px; padding:12px 16px; background:#fff4d3; color:#102438; border:0; box-shadow:3px 3px 0 #102438; text-shadow:none; }
+#puzzle-count { font-size:16px; white-space:nowrap; }
+#puzzle-bottom { position:absolute; left:5%; right:5%; bottom:max(18px,env(safe-area-inset-bottom)); display:flex; flex-direction:column; align-items:center; gap:12px; pointer-events:none; }
+#puzzle-bottom p { margin:0; text-align:center; font-size:11px; text-shadow:2px 2px 0 #102438,-1px -1px 0 #102438; }
+#puzzle-status:empty { display:none; }
+.puzzle-open { overflow:hidden; }
+#level-puzzle-entry { display:flex; flex-wrap:wrap; justify-content:center; gap:16px; padding:16px 24px; }
+#level-puzzle-entry button { min-height:48px; white-space:nowrap; }
+html[data-entry=puzzle]:not([data-ready]) #editor-header,html[data-entry=puzzle]:not([data-ready]) #editor-main { visibility:hidden; }
+@media (max-width:760px) and (orientation:portrait) {
+  #puzzle-view { width:100vw; height:100dvh; }
+}
+@media (max-height:560px) {
+  #puzzle-heading { top:8px; }
+  #puzzle-heading button { min-height:36px; padding:8px 14px; font-size:11px; }
+  #puzzle-bottom { bottom:8px; gap:6px; }
+}

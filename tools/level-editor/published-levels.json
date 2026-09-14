@@ -1,0 +1,2826 @@
+{
+  "version": 2,
+  "levels": [
+    {
+      "id": "820479ed-42e9-40eb-accb-9fa7390e9b0a",
+      "name": "Garden climb",
+      "mode": "climb",
+      "theme": "garden",
+      "width": 330,
+      "viewportHeight": 717,
+      "height": 10800,
+      "vines": [
+        {
+          "id": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "type": "vine",
+          "points": [
+            {
+              "x": 120.26212387357313,
+              "y": -290
+            },
+            {
+              "x": 130.56690763682292,
+              "y": -120
+            },
+            {
+              "x": 146.30791956918478,
+              "y": 50
+            },
+            {
+              "x": 165,
+              "y": 220
+            },
+            {
+              "x": 183.69208043081522,
+              "y": 390
+            },
+            {
+              "x": 199.43309236317708,
+              "y": 560
+            },
+            {
+              "x": 209.73787612642687,
+              "y": 730
+            },
+            {
+              "x": 212.97953294599225,
+              "y": 900
+            },
+            {
+              "x": 208.64627648763272,
+              "y": 1070
+            },
+            {
+              "x": 197.42223266645522,
+              "y": 1240
+            },
+            {
+              "x": 181.07943120748342,
+              "y": 1410
+            },
+            {
+              "x": 162.19804111547614,
+              "y": 1580
+            },
+            {
+              "x": 143.75901872184707,
+              "y": 1750
+            },
+            {
+              "x": 128.67348022521946,
+              "y": 1920
+            },
+            {
+              "x": 119.32310045330323,
+              "y": 2090
+            },
+            {
+              "x": 117.18409877587965,
+              "y": 2260
+            },
+            {
+              "x": 122.59417652543266,
+              "y": 2430
+            },
+            {
+              "x": 134.6992013821286,
+              "y": 2600
+            },
+            {
+              "x": 151.58805608645156,
+              "y": 2770
+            },
+            {
+              "x": 170.5943618328237,
+              "y": 2940
+            },
+            {
+              "x": 188.71744085465323,
+              "y": 3110
+            },
+            {
+              "x": 203.09605746475935,
+              "y": 3280
+            },
+            {
+              "x": 211.46014425751136,
+              "y": 3450
+            },
+            {
+              "x": 212.48919583792232,
+              "y": 3620
+            },
+            {
+              "x": 206.02074758823747,
+              "y": 3790
+            },
+            {
+              "x": 193.07602525880458,
+              "y": 3960
+            },
+            {
+              "x": 175.6987158768118,
+              "y": 4130
+            },
+            {
+              "x": 156.6323145012969,
+              "y": 4300
+            },
+            {
+              "x": 138.88698667731026,
+              "y": 4470
+            },
+            {
+              "x": 125.26432948388862,
+              "y": 4640
+            },
+            {
+              "x": 117.9150609568084,
+              "y": 4810
+            },
+            {
+              "x": 117.99946900073678,
+              "y": 4980
+            },
+            {
+              "x": 125.50422744150202,
+              "y": 5150
+            },
+            {
+              "x": 139.24449993597912,
+              "y": 5320
+            },
+            {
+              "x": 157.05099957848114,
+              "y": 5490
+            },
+            {
+              "x": 176.11247160487386,
+              "y": 5660
+            },
+            {
+              "x": 193.4195287059468,
+              "y": 5830
+            },
+            {
+              "x": 206.23976711311184,
+              "y": 6000
+            },
+            {
+              "x": 212.54915307335378,
+              "y": 6170
+            },
+            {
+              "x": 211.3515732743653,
+              "y": 6340
+            },
+            {
+              "x": 202.8360992340152,
+              "y": 6510
+            },
+            {
+              "x": 188.34713706498232,
+              "y": 6680
+            },
+            {
+              "x": 170.17217531037323,
+              "y": 6850
+            },
+            {
+              "x": 151.18064080007687,
+              "y": 7020
+            },
+            {
+              "x": 134.37087924729838,
+              "y": 7190
+            },
+            {
+              "x": 122.39678238808779,
+              "y": 7360
+            },
+            {
+              "x": 117.14879683000339,
+              "y": 7530
+            },
+            {
+              "x": 119.45546409993005,
+              "y": 7700
+            },
+            {
+              "x": 128.95261215495955,
+              "y": 7870
+            },
+            {
+              "x": 144.1408501405491,
+              "y": 8040
+            },
+            {
+              "x": 162.62228923783837,
+              "y": 8210
+            },
+            {
+              "x": 181.47911658335514,
+              "y": 8380
+            },
+            {
+              "x": 197.73425376327052,
+              "y": 8550
+            },
+            {
+              "x": 208.82137203492613,
+              "y": 8720
+            },
+            {
+              "x": 212.99005920684812,
+              "y": 8890
+            },
+            {
+              "x": 209.58217123570753,
+              "y": 9060
+            },
+            {
+              "x": 199.13573869948704,
+              "y": 9230
+            },
+            {
+              "x": 183.3000235994371,
+              "y": 9400
+            },
+            {
+              "x": 164.57513715406063,
+              "y": 9570
+            },
+            {
+              "x": 145.91732721017107,
+              "y": 9740
+            },
+            {
+              "x": 130.27225170987623,
+              "y": 9910
+            },
+            {
+              "x": 120.10992407066206,
+              "y": 10080
+            },
+            {
+              "x": 117.03475237744188,
+              "y": 10205
+            },
+            {
+              "x": 118.35367460429455,
+              "y": 10290
+            }
+          ]
+        }
+      ],
+      "leaves": [
+        {
+          "id": "23e117f7-6234-4263-8cbd-bd34a60f8d96",
+          "type": "leaf",
+          "x": 99,
+          "y": 220,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "101af218-426a-4d0c-919e-19ce536c2e33",
+          "type": "leaf",
+          "x": 214,
+          "y": 382,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "430aa458-4df8-4963-a39a-5a6b158a5dfc",
+          "type": "leaf",
+          "x": 256,
+          "y": 560,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "e3cd00fa-0ac4-4dd1-b675-58275d99169f",
+          "type": "leaf",
+          "x": 275,
+          "y": 736,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "c3511c52-44c4-4cdf-9b5c-99f00386c3c3",
+          "type": "leaf",
+          "x": 255,
+          "y": 910,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "a49cee73-fc70-4f67-9fe9-21acde184ce4",
+          "type": "leaf",
+          "x": 87,
+          "y": 1070,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "982f8670-ed86-46c4-8ab2-7ff1b1e30b1d",
+          "type": "leaf",
+          "x": 254,
+          "y": 1240,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "fragile": true
+        },
+        {
+          "id": "24dcf9b2-9259-4466-a5ec-7802c227b72e",
+          "type": "leaf",
+          "x": 110,
+          "y": 1445,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "e0c1d31b-d53b-47ca-aa80-2f1c24b16e85",
+          "type": "leaf",
+          "x": 80,
+          "y": 1580,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "01b082fd-f957-4837-8089-8228cfd896c9",
+          "type": "leaf",
+          "x": 280,
+          "y": 1750,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "455468d1-560e-40da-9f7b-53956e58e44b",
+          "type": "leaf",
+          "x": 54,
+          "y": 1926,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "923a2367-4dcd-430c-ba5e-0f8cf294db81",
+          "type": "leaf",
+          "x": 269,
+          "y": 2092,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "23b1bbd5-3e67-47b1-bad3-fd8a11238855",
+          "type": "leaf",
+          "x": 250,
+          "y": 2260,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "53c8b51b-6bae-4858-85fc-37a52864daa6",
+          "type": "leaf",
+          "x": 67,
+          "y": 2430,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "4f6326cf-b830-43f9-8470-e8bba0a7deba",
+          "type": "leaf",
+          "x": 77,
+          "y": 2600,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "b77eb073-8c3d-43a0-99ea-3f36460fc240",
+          "type": "leaf",
+          "x": 47,
+          "y": 2770,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "d407ed8f-06ad-4d02-b7a5-b6f64fc4ef1f",
+          "type": "leaf",
+          "x": 73,
+          "y": 2940,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "17c994d3-6b73-46b5-8dbf-bec1a3d33c3b",
+          "type": "leaf",
+          "x": 92,
+          "y": 3092,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "fragile": true
+        },
+        {
+          "id": "0c39bf6e-4aae-4a45-b544-214c6db71dd1",
+          "type": "leaf",
+          "x": 59,
+          "y": 3280,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "b7dfc6c9-9f90-4c5f-b566-1849979b1c17",
+          "type": "leaf",
+          "x": 272,
+          "y": 3442,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "f14878ba-ddda-4508-84b0-2348ed28bb57",
+          "type": "leaf",
+          "x": 250,
+          "y": 3602,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "385e7468-d791-4103-b849-53cfd7869e06",
+          "type": "leaf",
+          "x": 95,
+          "y": 3788,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "0f45072a-fa23-4123-9065-4bf1875487c6",
+          "type": "leaf",
+          "x": 230,
+          "y": 3960,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "78f8fb7e-340c-4f79-bb41-7de03d53916c",
+          "type": "leaf",
+          "x": 89,
+          "y": 4130,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "c3bc7ae2-5610-4b3d-beb3-1b960816486b",
+          "type": "leaf",
+          "x": 74,
+          "y": 4278,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "c222072a-7b4c-49d1-b2e7-b01117be74e3",
+          "type": "leaf",
+          "x": 275,
+          "y": 4482,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "3fbefda4-a76d-40d0-b075-7aee2a74077d",
+          "type": "leaf",
+          "x": 80,
+          "y": 4692,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "fragile": true
+        },
+        {
+          "id": "8e31c645-e797-4824-aea4-30de520ceb02",
+          "type": "leaf",
+          "x": 260,
+          "y": 4810,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "92f943d1-a707-4e8c-8fd6-ae1ec38fc932",
+          "type": "leaf",
+          "x": 257,
+          "y": 4978,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "e750bfb0-db23-4539-ac21-8327c6082e89",
+          "type": "leaf",
+          "x": 80,
+          "y": 5150,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "87c0c177-0a3a-4895-ab2a-ea33a07f39b9",
+          "type": "leaf",
+          "x": 249,
+          "y": 5290,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "70f85e24-3530-499c-9dbe-a4f64d0e26b4",
+          "type": "leaf",
+          "x": 90,
+          "y": 5480,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "ed20af33-746a-47db-ac7d-8fb32224aecc",
+          "type": "leaf",
+          "x": 108,
+          "y": 5690,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-34",
+          "type": "leaf",
+          "x": 267,
+          "y": 5900,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-35",
+          "type": "leaf",
+          "x": 78,
+          "y": 6018,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-36",
+          "type": "leaf",
+          "x": 249,
+          "y": 6170,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-37",
+          "type": "leaf",
+          "x": 255,
+          "y": 6348,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-38",
+          "type": "leaf",
+          "x": 259,
+          "y": 6510,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-39",
+          "type": "leaf",
+          "x": 255,
+          "y": 6680,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "fragile": true
+        },
+        {
+          "id": "garden-upper-leaf-40",
+          "type": "leaf",
+          "x": 115,
+          "y": 6850,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-41",
+          "type": "leaf",
+          "x": 43,
+          "y": 6990,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-42",
+          "type": "leaf",
+          "x": 89,
+          "y": 7172,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-43",
+          "type": "leaf",
+          "x": 80,
+          "y": 7360,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-44",
+          "type": "leaf",
+          "x": 252,
+          "y": 7530,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-45",
+          "type": "leaf",
+          "x": 264,
+          "y": 7702,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-46",
+          "type": "leaf",
+          "x": 69,
+          "y": 7880,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-47",
+          "type": "leaf",
+          "x": 264,
+          "y": 8048,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-48",
+          "type": "leaf",
+          "x": 72,
+          "y": 8210,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-49",
+          "type": "leaf",
+          "x": 64,
+          "y": 8380,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-50",
+          "type": "leaf",
+          "x": 67,
+          "y": 8550,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "fragile": true
+        },
+        {
+          "id": "garden-upper-leaf-51",
+          "type": "leaf",
+          "x": 54,
+          "y": 8724,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-52",
+          "type": "leaf",
+          "x": 78,
+          "y": 8858,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-53",
+          "type": "leaf",
+          "x": 98,
+          "y": 9062,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-54",
+          "type": "leaf",
+          "x": 80,
+          "y": 9272,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-55",
+          "type": "leaf",
+          "x": 269,
+          "y": 9400,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-56",
+          "type": "leaf",
+          "x": 48,
+          "y": 9570,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-57",
+          "type": "leaf",
+          "x": 121,
+          "y": 9770,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "fragile": true
+        },
+        {
+          "id": "garden-upper-leaf-58",
+          "type": "leaf",
+          "x": 115,
+          "y": 9904,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-59",
+          "type": "leaf",
+          "x": 66,
+          "y": 10080,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-upper-leaf-60",
+          "type": "leaf",
+          "x": 255,
+          "y": 10205,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-0-leaf-0",
+          "type": "leaf",
+          "x": 250,
+          "y": 2636,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-0-leaf-1",
+          "type": "leaf",
+          "x": 221,
+          "y": 2734,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-0-leaf-2",
+          "type": "leaf",
+          "x": 243,
+          "y": 2944,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-0-leaf-3",
+          "type": "leaf",
+          "x": 263,
+          "y": 3102,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-1-leaf-0",
+          "type": "leaf",
+          "x": 92,
+          "y": 6356,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-1-leaf-1",
+          "type": "leaf",
+          "x": 97,
+          "y": 6548,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-1-leaf-2",
+          "type": "leaf",
+          "x": 70,
+          "y": 6758,
+          "side": "left",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-2-leaf-0",
+          "type": "leaf",
+          "x": 241,
+          "y": 8572,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-2-leaf-1",
+          "type": "leaf",
+          "x": 262,
+          "y": 8738,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-2-leaf-2",
+          "type": "leaf",
+          "x": 252,
+          "y": 8882,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        },
+        {
+          "id": "garden-fork-2-leaf-3",
+          "type": "leaf",
+          "x": 257,
+          "y": 9072,
+          "side": "right",
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc"
+        }
+      ],
+      "objects": [
+        {
+          "id": "8cdabb82-4597-45bf-b1db-35670cfc2d17",
+          "type": "lyric",
+          "asset": "lyric-fragment-01",
+          "x": 222,
+          "y": 1778,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "cb1a6b6e-f958-4e80-a608-b806fbad9ca5",
+          "type": "lyric",
+          "asset": "lyric-fragment-02",
+          "x": 128,
+          "y": 3818,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "6266b1aa-2fc1-47c8-b308-238cbf9b585f",
+          "type": "lyric",
+          "asset": "lyric-fragment-03",
+          "x": 98,
+          "y": 5688,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "20b87b5f-4acf-47e6-9feb-ca97ebec85ae",
+          "type": "lyric",
+          "asset": "lyric-fragment-04",
+          "x": 165,
+          "y": 7225,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "0b4195cc-1148-40e3-b324-ab1ff47b28fa",
+          "type": "lyric",
+          "asset": "lyric-fragment-05",
+          "x": 179,
+          "y": 9775,
+          "text": "",
+          "final": true
+        },
+        {
+          "id": "820479ed-42e9-40eb-accb-9fa7390e9b0a-forest-flower-2",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 103,
+          "y": 664,
+          "forestFlower": 2,
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "layer": "behind"
+        },
+        {
+          "id": "820479ed-42e9-40eb-accb-9fa7390e9b0a-forest-flower-3",
+          "type": "scenery",
+          "asset": "flower-daisy",
+          "x": 95.5,
+          "y": 526,
+          "forestFlower": 3,
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "layer": "behind"
+        },
+        {
+          "id": "820479ed-42e9-40eb-accb-9fa7390e9b0a-forest-flower-4",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 245,
+          "y": 195,
+          "forestFlower": 4,
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "layer": "behind"
+        },
+        {
+          "id": "820479ed-42e9-40eb-accb-9fa7390e9b0a-forest-flower-5",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 281,
+          "y": 147,
+          "forestFlower": 5,
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "layer": "behind"
+        },
+        {
+          "id": "820479ed-42e9-40eb-accb-9fa7390e9b0a-forest-flower-6",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 256,
+          "y": 110,
+          "forestFlower": 6,
+          "vine": "bfb8bc8d-dd3a-4325-ad65-285c5c65cefc",
+          "layer": "behind"
+        }
+      ],
+      "sections": [
+        {
+          "id": "02914d51-06eb-42d0-a78a-14ad1068d31a",
+          "type": "section",
+          "name": "Rosette",
+          "y": 0,
+          "end": 1193,
+          "weather": 0,
+          "wind": 0.2
+        },
+        {
+          "id": "1ee5a6c9-fae0-497c-ae39-04bc26ec49f3",
+          "type": "section",
+          "name": "Diagonal",
+          "y": 1193,
+          "end": 2387,
+          "weather": 0,
+          "wind": 0.23500000000000001
+        },
+        {
+          "id": "bcca0315-3fdf-487d-9a2f-878d72f86cd5",
+          "type": "section",
+          "name": "Right crossing",
+          "y": 2387,
+          "end": 3580,
+          "weather": 0,
+          "wind": 0.27
+        },
+        {
+          "id": "5fbf89e0-5182-4ac4-8936-883b614dac50",
+          "type": "section",
+          "name": "Left switchback",
+          "y": 3580,
+          "end": 4774,
+          "weather": 0,
+          "wind": 0.30500000000000005
+        },
+        {
+          "id": "34a2fc11-181f-47e9-852c-ada32da70ad4",
+          "type": "section",
+          "name": "Open garden",
+          "y": 4774,
+          "end": 5967,
+          "weather": 0,
+          "wind": 0.34
+        },
+        {
+          "id": "484c2759-7e88-4109-9fe9-83dde8320b63",
+          "type": "section",
+          "name": "Branch fan",
+          "y": 5967,
+          "end": 7160,
+          "weather": 0,
+          "wind": 0.375
+        },
+        {
+          "id": "a5d8d4cb-5871-4046-a341-d06741fdaa6a",
+          "type": "section",
+          "name": "Upper arch",
+          "y": 7160,
+          "end": 8354,
+          "weather": 0,
+          "wind": 0.41000000000000003
+        },
+        {
+          "id": "a1a6d10b-fcde-4362-a2ff-745018c38382",
+          "type": "section",
+          "name": "Upper crown",
+          "y": 8354,
+          "end": 10565,
+          "weather": 0,
+          "wind": 0.44500000000000006
+        }
+      ],
+      "scenery": {
+        "clouds": true,
+        "terrain": true,
+        "water": true,
+        "trees": true,
+        "brush": true,
+        "birds": true,
+        "air": true,
+        "weather": true
+      },
+      "start": {
+        "x": 87,
+        "y": 220,
+        "leafId": "23e117f7-6234-4263-8cbd-bd34a60f8d96"
+      },
+      "speed": 57,
+      "draft": false,
+      "ending": {
+        "x": 165,
+        "y": 10370
+      },
+      "view": 0,
+      "forestArtwork": true
+    },
+    {
+      "id": "b237b848-d16a-4548-915f-bf4c6a208be1",
+      "name": "Rain",
+      "mode": "climb",
+      "theme": "rain",
+      "width": 330,
+      "viewportHeight": 717,
+      "height": 10800,
+      "vines": [
+        {
+          "id": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "type": "vine",
+          "points": [
+            {
+              "x": 120.26212387357313,
+              "y": -290
+            },
+            {
+              "x": 130.56690763682292,
+              "y": -120
+            },
+            {
+              "x": 146.30791956918478,
+              "y": 50
+            },
+            {
+              "x": 165,
+              "y": 220
+            },
+            {
+              "x": 183.69208043081522,
+              "y": 390
+            },
+            {
+              "x": 199.43309236317708,
+              "y": 560
+            },
+            {
+              "x": 209.73787612642687,
+              "y": 730
+            },
+            {
+              "x": 212.97953294599225,
+              "y": 900
+            },
+            {
+              "x": 208.64627648763272,
+              "y": 1070
+            },
+            {
+              "x": 197.42223266645522,
+              "y": 1240
+            },
+            {
+              "x": 181.07943120748342,
+              "y": 1410
+            },
+            {
+              "x": 162.19804111547614,
+              "y": 1580
+            },
+            {
+              "x": 143.75901872184707,
+              "y": 1750
+            },
+            {
+              "x": 128.67348022521944,
+              "y": 1920
+            },
+            {
+              "x": 119.32310045330323,
+              "y": 2090
+            },
+            {
+              "x": 117.18409877587965,
+              "y": 2260
+            },
+            {
+              "x": 122.59417652543266,
+              "y": 2430
+            },
+            {
+              "x": 134.6992013821286,
+              "y": 2600
+            },
+            {
+              "x": 151.58805608645156,
+              "y": 2770
+            },
+            {
+              "x": 170.5943618328237,
+              "y": 2940
+            },
+            {
+              "x": 188.71744085465323,
+              "y": 3110
+            },
+            {
+              "x": 203.09605746475935,
+              "y": 3280
+            },
+            {
+              "x": 211.46014425751136,
+              "y": 3450
+            },
+            {
+              "x": 212.48919583792232,
+              "y": 3620
+            },
+            {
+              "x": 206.02074758823747,
+              "y": 3790
+            },
+            {
+              "x": 193.07602525880458,
+              "y": 3960
+            },
+            {
+              "x": 175.6987158768118,
+              "y": 4130
+            },
+            {
+              "x": 156.6323145012969,
+              "y": 4300
+            },
+            {
+              "x": 138.88698667731026,
+              "y": 4470
+            },
+            {
+              "x": 125.26432948388862,
+              "y": 4640
+            },
+            {
+              "x": 117.9150609568084,
+              "y": 4810
+            },
+            {
+              "x": 117.99946900073678,
+              "y": 4980
+            },
+            {
+              "x": 125.50422744150202,
+              "y": 5150
+            },
+            {
+              "x": 139.24449993597912,
+              "y": 5320
+            },
+            {
+              "x": 157.05099957848114,
+              "y": 5490
+            },
+            {
+              "x": 176.11247160487386,
+              "y": 5660
+            },
+            {
+              "x": 193.4195287059468,
+              "y": 5830
+            },
+            {
+              "x": 206.23976711311184,
+              "y": 6000
+            },
+            {
+              "x": 212.54915307335378,
+              "y": 6170
+            },
+            {
+              "x": 211.3515732743653,
+              "y": 6340
+            },
+            {
+              "x": 202.8360992340152,
+              "y": 6510
+            },
+            {
+              "x": 188.34713706498232,
+              "y": 6680
+            },
+            {
+              "x": 170.17217531037323,
+              "y": 6850
+            },
+            {
+              "x": 151.18064080007687,
+              "y": 7020
+            },
+            {
+              "x": 134.37087924729838,
+              "y": 7190
+            },
+            {
+              "x": 122.39678238808779,
+              "y": 7360
+            },
+            {
+              "x": 117.14879683000339,
+              "y": 7530
+            },
+            {
+              "x": 119.45546409993005,
+              "y": 7700
+            },
+            {
+              "x": 128.95261215495955,
+              "y": 7870
+            },
+            {
+              "x": 144.1408501405491,
+              "y": 8040
+            },
+            {
+              "x": 162.62228923783837,
+              "y": 8210
+            },
+            {
+              "x": 181.47911658335514,
+              "y": 8380
+            },
+            {
+              "x": 197.73425376327052,
+              "y": 8550
+            },
+            {
+              "x": 208.82137203492613,
+              "y": 8720
+            },
+            {
+              "x": 212.99005920684812,
+              "y": 8890
+            },
+            {
+              "x": 209.58217123570753,
+              "y": 9060
+            },
+            {
+              "x": 199.13573869948704,
+              "y": 9230
+            },
+            {
+              "x": 183.3000235994371,
+              "y": 9400
+            },
+            {
+              "x": 164.57513715406063,
+              "y": 9570
+            },
+            {
+              "x": 145.91732721017107,
+              "y": 9740
+            },
+            {
+              "x": 130.27225170987623,
+              "y": 9910
+            },
+            {
+              "x": 120.10992407066206,
+              "y": 10080
+            },
+            {
+              "x": 117.03475237744188,
+              "y": 10205
+            },
+            {
+              "x": 118.35367460429455,
+              "y": 10290
+            }
+          ]
+        }
+      ],
+      "leaves": [
+        {
+          "id": "8091f506-b535-40d8-9d5c-20cc92963e9e",
+          "type": "leaf",
+          "x": 99,
+          "y": 220,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "0144a6fa-1f73-4fdf-bc6f-74828903cf7f",
+          "type": "leaf",
+          "x": 214,
+          "y": 382,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "c3036fe0-2c44-4a6c-bf11-9572bd3dd031",
+          "type": "leaf",
+          "x": 256,
+          "y": 560,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "6c87e562-e1e5-428f-a249-b62eb957b6c0",
+          "type": "leaf",
+          "x": 275,
+          "y": 736,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "cca0ff70-b129-46ac-8a8a-7e8f28e8e2f4",
+          "type": "leaf",
+          "x": 255,
+          "y": 910,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "d38a44a4-43bb-49b7-8309-874ab5b59756",
+          "type": "leaf",
+          "x": 87,
+          "y": 1070,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "59ca652d-51f9-48e9-92d2-1d2c5994b6d7",
+          "type": "leaf",
+          "x": 254,
+          "y": 1240,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "7c510567-a28f-4487-8a54-73fb2769b078",
+          "type": "leaf",
+          "x": 110,
+          "y": 1445,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "4b5b22ad-490c-4ce2-ad5c-e4230bcdb855",
+          "type": "leaf",
+          "x": 80,
+          "y": 1580,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-10",
+          "type": "leaf",
+          "x": 280,
+          "y": 1750,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-11",
+          "type": "leaf",
+          "x": 54,
+          "y": 1926,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-12",
+          "type": "leaf",
+          "x": 269,
+          "y": 2092,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-13",
+          "type": "leaf",
+          "x": 250,
+          "y": 2260,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-14",
+          "type": "leaf",
+          "x": 67,
+          "y": 2430,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-15",
+          "type": "leaf",
+          "x": 77,
+          "y": 2600,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-16",
+          "type": "leaf",
+          "x": 47,
+          "y": 2770,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-17",
+          "type": "leaf",
+          "x": 73,
+          "y": 2940,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-18",
+          "type": "leaf",
+          "x": 92,
+          "y": 3092,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-19",
+          "type": "leaf",
+          "x": 59,
+          "y": 3280,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-20",
+          "type": "leaf",
+          "x": 272,
+          "y": 3442,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-21",
+          "type": "leaf",
+          "x": 250,
+          "y": 3602,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-22",
+          "type": "leaf",
+          "x": 95,
+          "y": 3788,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-23",
+          "type": "leaf",
+          "x": 230,
+          "y": 3960,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-24",
+          "type": "leaf",
+          "x": 89,
+          "y": 4130,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-25",
+          "type": "leaf",
+          "x": 74,
+          "y": 4278,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-26",
+          "type": "leaf",
+          "x": 275,
+          "y": 4482,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-27",
+          "type": "leaf",
+          "x": 80,
+          "y": 4692,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-28",
+          "type": "leaf",
+          "x": 260,
+          "y": 4810,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-29",
+          "type": "leaf",
+          "x": 257,
+          "y": 4978,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-30",
+          "type": "leaf",
+          "x": 80,
+          "y": 5150,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-31",
+          "type": "leaf",
+          "x": 249,
+          "y": 5290,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-32",
+          "type": "leaf",
+          "x": 90,
+          "y": 5480,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-33",
+          "type": "leaf",
+          "x": 108,
+          "y": 5690,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-34",
+          "type": "leaf",
+          "x": 267,
+          "y": 5900,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-35",
+          "type": "leaf",
+          "x": 78,
+          "y": 6018,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-36",
+          "type": "leaf",
+          "x": 249,
+          "y": 6170,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-37",
+          "type": "leaf",
+          "x": 255,
+          "y": 6348,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-38",
+          "type": "leaf",
+          "x": 259,
+          "y": 6510,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-39",
+          "type": "leaf",
+          "x": 255,
+          "y": 6680,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-40",
+          "type": "leaf",
+          "x": 115,
+          "y": 6850,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-41",
+          "type": "leaf",
+          "x": 43,
+          "y": 6990,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-42",
+          "type": "leaf",
+          "x": 89,
+          "y": 7172,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-43",
+          "type": "leaf",
+          "x": 80,
+          "y": 7360,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-44",
+          "type": "leaf",
+          "x": 252,
+          "y": 7530,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-45",
+          "type": "leaf",
+          "x": 264,
+          "y": 7702,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-46",
+          "type": "leaf",
+          "x": 69,
+          "y": 7880,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-47",
+          "type": "leaf",
+          "x": 264,
+          "y": 8048,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-48",
+          "type": "leaf",
+          "x": 72,
+          "y": 8210,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-49",
+          "type": "leaf",
+          "x": 64,
+          "y": 8380,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-50",
+          "type": "leaf",
+          "x": 67,
+          "y": 8550,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-51",
+          "type": "leaf",
+          "x": 54,
+          "y": 8724,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-52",
+          "type": "leaf",
+          "x": 78,
+          "y": 8858,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-53",
+          "type": "leaf",
+          "x": 98,
+          "y": 9062,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-54",
+          "type": "leaf",
+          "x": 80,
+          "y": 9272,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-55",
+          "type": "leaf",
+          "x": 269,
+          "y": 9400,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-56",
+          "type": "leaf",
+          "x": 48,
+          "y": 9570,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-57",
+          "type": "leaf",
+          "x": 121,
+          "y": 9770,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-upper-leaf-58",
+          "type": "leaf",
+          "x": 115,
+          "y": 9904,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-59",
+          "type": "leaf",
+          "x": 66,
+          "y": 10080,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-upper-leaf-60",
+          "type": "leaf",
+          "x": 255,
+          "y": 10205,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-0-leaf-0",
+          "type": "leaf",
+          "x": 250,
+          "y": 2636,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-0-leaf-1",
+          "type": "leaf",
+          "x": 221,
+          "y": 2734,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-0-leaf-2",
+          "type": "leaf",
+          "x": 243,
+          "y": 2944,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-0-leaf-3",
+          "type": "leaf",
+          "x": 263,
+          "y": 3102,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-1-leaf-0",
+          "type": "leaf",
+          "x": 92,
+          "y": 6356,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-fork-1-leaf-1",
+          "type": "leaf",
+          "x": 97,
+          "y": 6548,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-fork-1-leaf-2",
+          "type": "leaf",
+          "x": 70,
+          "y": 6758,
+          "side": "left",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "fragile": true
+        },
+        {
+          "id": "rain-fork-2-leaf-0",
+          "type": "leaf",
+          "x": 241,
+          "y": 8572,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-2-leaf-1",
+          "type": "leaf",
+          "x": 262,
+          "y": 8738,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-2-leaf-2",
+          "type": "leaf",
+          "x": 252,
+          "y": 8882,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        },
+        {
+          "id": "rain-fork-2-leaf-3",
+          "type": "leaf",
+          "x": 257,
+          "y": 9072,
+          "side": "right",
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a"
+        }
+      ],
+      "objects": [
+        {
+          "id": "ae71888d-05a6-4f0b-8c77-3178e433d5f0",
+          "type": "lyric",
+          "asset": "lyric-fragment-07",
+          "x": 128,
+          "y": 3818,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "26c4fdb9-4ffe-46cd-8c73-3916f0037163",
+          "type": "lyric",
+          "asset": "lyric-fragment-08",
+          "x": 98,
+          "y": 5688,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "49a994a4-8f97-4c74-9725-383793937340",
+          "type": "lyric",
+          "asset": "lyric-fragment-10",
+          "x": 179,
+          "y": 9775,
+          "text": "",
+          "final": true
+        },
+        {
+          "id": "rain-puzzle-lyric-leaf-2",
+          "type": "lyric",
+          "asset": "lyric-fragment-06",
+          "x": 222,
+          "y": 1778,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "rain-puzzle-lyric-leaf-7",
+          "type": "lyric",
+          "asset": "lyric-fragment-09",
+          "x": 165,
+          "y": 7225,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "b237b848-d16a-4548-915f-bf4c6a208be1-forest-flower-2",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 103,
+          "y": 664,
+          "forestFlower": 2,
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "layer": "behind"
+        },
+        {
+          "id": "b237b848-d16a-4548-915f-bf4c6a208be1-forest-flower-3",
+          "type": "scenery",
+          "asset": "flower-daisy",
+          "x": 95.5,
+          "y": 526,
+          "forestFlower": 3,
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "layer": "behind"
+        },
+        {
+          "id": "b237b848-d16a-4548-915f-bf4c6a208be1-forest-flower-4",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 245,
+          "y": 195,
+          "forestFlower": 4,
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "layer": "behind"
+        },
+        {
+          "id": "b237b848-d16a-4548-915f-bf4c6a208be1-forest-flower-5",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 281,
+          "y": 147,
+          "forestFlower": 5,
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "layer": "behind"
+        },
+        {
+          "id": "b237b848-d16a-4548-915f-bf4c6a208be1-forest-flower-6",
+          "type": "scenery",
+          "asset": "flower-pink",
+          "x": 256,
+          "y": 110,
+          "forestFlower": 6,
+          "vine": "a759bfe0-e8a3-4dbf-8571-2bd57ff3284a",
+          "layer": "behind"
+        }
+      ],
+      "sections": [
+        {
+          "id": "13b98696-c0d1-47bd-96c6-0ba17e7930a1",
+          "type": "section",
+          "name": "First shower",
+          "y": 0,
+          "end": 2113,
+          "weather": 0,
+          "wind": 0.25
+        },
+        {
+          "id": "dd0a64f6-c442-4ccc-8c29-baf461093ac9",
+          "type": "section",
+          "name": "Rain crossings",
+          "y": 2113,
+          "end": 4226,
+          "weather": 0.25,
+          "wind": 0.41000000000000003
+        },
+        {
+          "id": "4548089b-c3d6-49d8-b203-c880ab078fc0",
+          "type": "section",
+          "name": "Heavy rain",
+          "y": 4226,
+          "end": 6339,
+          "weather": 0.5,
+          "wind": 0.5700000000000001
+        },
+        {
+          "id": "fe3fd34a-d788-4917-a8b0-bee97f9b3c56",
+          "type": "section",
+          "name": "Storm approach",
+          "y": 6339,
+          "end": 8452,
+          "weather": 0.75,
+          "wind": 0.73
+        },
+        {
+          "id": "f08138f8-f4eb-4879-8b7e-9a725b7e2be8",
+          "type": "section",
+          "name": "Storm summit",
+          "y": 8452,
+          "end": 10565,
+          "weather": 1,
+          "wind": 0.89
+        }
+      ],
+      "scenery": {
+        "clouds": true,
+        "terrain": true,
+        "water": true,
+        "trees": true,
+        "brush": true,
+        "birds": true,
+        "air": true,
+        "weather": true
+      },
+      "start": {
+        "x": 87,
+        "y": 220,
+        "leafId": "8091f506-b535-40d8-9d5c-20cc92963e9e"
+      },
+      "speed": 57,
+      "draft": false,
+      "ending": {
+        "x": 165,
+        "y": 10370
+      },
+      "forestArtwork": true
+    },
+    {
+      "id": "bd0ab538-8c65-4eea-a201-017be93a143a",
+      "name": "Dandelion flight",
+      "mode": "flight",
+      "theme": "sunset",
+      "width": 330,
+      "viewportHeight": 717,
+      "height": 10800,
+      "vines": [],
+      "leaves": [],
+      "objects": [
+        {
+          "id": "flight-object-0",
+          "type": "bramble",
+          "x": 90,
+          "y": 631,
+          "group": "encounter-0",
+          "phase": 0.4707439950553718,
+          "period": 8.578236153855121,
+          "asset": "long-bramble-left-s",
+          "side": "left"
+        },
+        {
+          "id": "flight-object-1",
+          "type": "bee",
+          "x": 65,
+          "y": 967,
+          "group": "encounter-1",
+          "phase": 0.37442443084145693,
+          "period": 6.260796479184315,
+          "asset": "bee-left",
+          "left": -20,
+          "right": 20
+        },
+        {
+          "id": "flight-object-2",
+          "type": "bramble",
+          "x": 240,
+          "y": 1201,
+          "group": "encounter-2",
+          "phase": 0.5692976815278308,
+          "period": 6.427706735021155,
+          "asset": "long-bramble-right-s",
+          "side": "right"
+        },
+        {
+          "id": "flight-object-3",
+          "type": "bee",
+          "x": 265,
+          "y": 1537,
+          "group": "encounter-3",
+          "phase": 0.6452500778033269,
+          "period": 7.232658093638798,
+          "asset": "bee-right",
+          "left": -20,
+          "right": 20
+        },
+        {
+          "id": "flight-object-4",
+          "type": "bramble",
+          "x": 90,
+          "y": 1771,
+          "group": "encounter-4",
+          "phase": 0.6590800583093889,
+          "period": 6.561868103565594,
+          "asset": "long-bramble-left-arch",
+          "side": "left"
+        },
+        {
+          "id": "flight-object-5",
+          "type": "bee",
+          "x": 65,
+          "y": 2107,
+          "group": "encounter-5",
+          "phase": 0.5368695274889577,
+          "period": 7.420124453584442,
+          "asset": "bee-left",
+          "left": -20,
+          "right": 20
+        },
+        {
+          "id": "flight-object-6",
+          "type": "bramble",
+          "x": 240,
+          "y": 2341,
+          "group": "encounter-6",
+          "phase": 0.18379981427135605,
+          "period": 7.000792803949014,
+          "asset": "long-bramble-right-arch",
+          "side": "right"
+        },
+        {
+          "id": "flight-object-7",
+          "type": "bee",
+          "x": 265,
+          "y": 2677,
+          "group": "encounter-7",
+          "phase": 0.773496202215392,
+          "period": 8.261936415844273,
+          "asset": "bee-right",
+          "left": -20,
+          "right": 20
+        },
+        {
+          "id": "flight-object-8",
+          "type": "pod",
+          "x": 107,
+          "y": 2997,
+          "group": "encounter-8",
+          "phase": 0.06653861935969974,
+          "period": 6.98921257882317,
+          "asset": "pod-tawny",
+          "side": "left",
+          "support": "support-left-low",
+          "falls": true,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5.817841090455163
+        },
+        {
+          "id": "flight-object-9",
+          "type": "pod",
+          "x": 107,
+          "y": 3282,
+          "group": "encounter-9",
+          "phase": 0.5059527383552097,
+          "period": 8.193066077777111,
+          "asset": "pod-olive",
+          "side": "left",
+          "support": "support-left-high",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5
+        },
+        {
+          "id": "flight-object-10",
+          "type": "pod",
+          "x": 223,
+          "y": 3567,
+          "group": "encounter-10",
+          "phase": 0.6896243299033933,
+          "period": 7.27489159992043,
+          "asset": "pod-olive",
+          "side": "right",
+          "support": "support-right-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-11",
+          "type": "pod",
+          "x": 223,
+          "y": 3852,
+          "group": "encounter-11",
+          "phase": 0.7058629518710807,
+          "period": 7.764965787197915,
+          "asset": "pod-tawny",
+          "side": "right",
+          "support": "support-right-high",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-12",
+          "type": "pod",
+          "x": 51,
+          "y": 4137,
+          "group": "encounter-12",
+          "phase": 0.16429746385280553,
+          "period": 6.780177204883551,
+          "asset": "pod-olive",
+          "side": "left",
+          "support": "support-left-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5
+        },
+        {
+          "id": "flight-object-13",
+          "type": "pod",
+          "x": 279,
+          "y": 4137,
+          "group": "encounter-12",
+          "phase": 0.716452758746271,
+          "period": 7.365707809375607,
+          "asset": "pod-tawny",
+          "side": "right",
+          "support": "support-right-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-14",
+          "type": "bee",
+          "x": 65,
+          "y": 4387,
+          "group": "encounter-13",
+          "phase": 0.3727034709187236,
+          "period": 6.349624876314723,
+          "asset": "bee-left",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-15",
+          "type": "bee",
+          "x": 265,
+          "y": 4387,
+          "group": "encounter-13",
+          "phase": 0.007755929307285303,
+          "period": 8.279340840560259,
+          "asset": "bee-right",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-16",
+          "type": "bee",
+          "x": 165,
+          "y": 4672,
+          "group": "encounter-14",
+          "phase": 0.3184283384048294,
+          "period": 11.424571117873105,
+          "asset": "bee-left",
+          "left": -99,
+          "right": 99
+        },
+        {
+          "id": "flight-object-17",
+          "type": "bramble",
+          "x": 90,
+          "y": 4906,
+          "group": "encounter-15",
+          "phase": 0.35578823125030057,
+          "period": 7.477834361604081,
+          "asset": "long-bramble-left-s",
+          "side": "left"
+        },
+        {
+          "id": "flight-object-18",
+          "type": "bee",
+          "x": 165,
+          "y": 5242,
+          "group": "encounter-16",
+          "phase": 0.7369812568314967,
+          "period": 11.982641675775328,
+          "asset": "bee-right",
+          "left": -99,
+          "right": 99
+        },
+        {
+          "id": "flight-object-19",
+          "type": "bramble",
+          "x": 240,
+          "y": 5476,
+          "group": "encounter-17",
+          "phase": 0.7645852056376987,
+          "period": 7.5302389407228185,
+          "asset": "long-bramble-right-arch",
+          "side": "right"
+        },
+        {
+          "id": "flight-object-20",
+          "type": "bee",
+          "x": 65,
+          "y": 5812,
+          "group": "encounter-18",
+          "phase": 0.6707056576660153,
+          "period": 8.222290583563018,
+          "asset": "bee-left",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-21",
+          "type": "bee",
+          "x": 265,
+          "y": 5812,
+          "group": "encounter-18",
+          "phase": 0.28033894316102304,
+          "period": 8.635867491236953,
+          "asset": "bee-right",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-22",
+          "type": "pod",
+          "x": 51,
+          "y": 6132,
+          "group": "encounter-19",
+          "phase": 0.6606277720472605,
+          "period": 7.919715281781163,
+          "asset": "pod-tawny",
+          "side": "left",
+          "support": "support-left-high",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5
+        },
+        {
+          "id": "flight-object-23",
+          "type": "pod",
+          "x": 279,
+          "y": 6132,
+          "group": "encounter-19",
+          "phase": 0.7843373160745806,
+          "period": 6.67320485842284,
+          "asset": "pod-olive",
+          "side": "right",
+          "support": "support-right-high",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-24",
+          "type": "pod",
+          "x": 107,
+          "y": 6417,
+          "group": "encounter-20",
+          "phase": 0.40170478745186255,
+          "period": 7.764788199545606,
+          "asset": "pod-olive",
+          "side": "left",
+          "support": "support-left-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5
+        },
+        {
+          "id": "flight-object-25",
+          "type": "bramble",
+          "x": 90,
+          "y": 6616,
+          "group": "encounter-21",
+          "phase": 0.4989064814336357,
+          "period": 7.718043754448915,
+          "asset": "long-bramble-left-arch",
+          "side": "left"
+        },
+        {
+          "id": "flight-object-26",
+          "type": "pod",
+          "x": 223,
+          "y": 6987,
+          "group": "encounter-22",
+          "phase": 0.5417022430588264,
+          "period": 6.183186450303192,
+          "asset": "pod-tawny",
+          "side": "right",
+          "support": "support-right-low",
+          "falls": true,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5.258618227403115
+        },
+        {
+          "id": "flight-object-27",
+          "type": "bramble",
+          "x": 240,
+          "y": 7186,
+          "group": "encounter-23",
+          "phase": 0.34440827732102886,
+          "period": 6.301189590924669,
+          "asset": "long-bramble-right-s",
+          "side": "right"
+        },
+        {
+          "id": "flight-object-28",
+          "type": "bee",
+          "x": 65,
+          "y": 7522,
+          "group": "encounter-24",
+          "phase": 0.7348479873510736,
+          "period": 8.280233466960789,
+          "asset": "bee-left",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-29",
+          "type": "bee",
+          "x": 265,
+          "y": 7522,
+          "group": "encounter-24",
+          "phase": 0.5926177496940307,
+          "period": 7.888977525097378,
+          "asset": "bee-right",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-30",
+          "type": "pod",
+          "x": 51,
+          "y": 7842,
+          "group": "encounter-25",
+          "phase": 0.7107275004708863,
+          "period": 8.618024525628508,
+          "asset": "pod-olive",
+          "side": "left",
+          "support": "support-left-high",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5
+        },
+        {
+          "id": "flight-object-31",
+          "type": "pod",
+          "x": 279,
+          "y": 7842,
+          "group": "encounter-25",
+          "phase": 0.477861013457352,
+          "period": 7.933051360431553,
+          "asset": "pod-tawny",
+          "side": "right",
+          "support": "support-right-high",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-32",
+          "type": "pod",
+          "x": 107,
+          "y": 8127,
+          "group": "encounter-26",
+          "phase": 0.879575689975803,
+          "period": 7.345642616074916,
+          "asset": "pod-tawny",
+          "side": "left",
+          "support": "support-left-low",
+          "falls": true,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -4.548788919464537
+        },
+        {
+          "id": "flight-object-33",
+          "type": "bramble",
+          "x": 90,
+          "y": 8326,
+          "group": "encounter-27",
+          "phase": 0.5449909695896985,
+          "period": 7.741231604187838,
+          "asset": "long-bramble-left-s",
+          "side": "left"
+        },
+        {
+          "id": "flight-object-34",
+          "type": "bee",
+          "x": 65,
+          "y": 8472,
+          "group": "encounter-27",
+          "phase": 0.2310591088454571,
+          "period": 7.5909005312041415,
+          "asset": "bee-left",
+          "left": -20,
+          "right": 20
+        },
+        {
+          "id": "flight-object-35",
+          "type": "pod",
+          "x": 223,
+          "y": 8697,
+          "group": "encounter-28",
+          "phase": 0.659567704132713,
+          "period": 8.42573975795989,
+          "asset": "pod-olive",
+          "side": "right",
+          "support": "support-right-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-36",
+          "type": "bramble",
+          "x": 240,
+          "y": 8896,
+          "group": "encounter-29",
+          "phase": 0.20843238004080333,
+          "period": 8.491804792895367,
+          "asset": "long-bramble-right-arch",
+          "side": "right"
+        },
+        {
+          "id": "flight-object-37",
+          "type": "bee",
+          "x": 265,
+          "y": 9042,
+          "group": "encounter-29",
+          "phase": 0.43173547009455904,
+          "period": 8.171975543051346,
+          "asset": "bee-right",
+          "left": -20,
+          "right": 20
+        },
+        {
+          "id": "flight-object-38",
+          "type": "pod",
+          "x": 51,
+          "y": 9267,
+          "group": "encounter-30",
+          "phase": 0.22624355483770853,
+          "period": 6.38466910883793,
+          "asset": "pod-tawny",
+          "side": "left",
+          "support": "support-left-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": -5
+        },
+        {
+          "id": "flight-object-39",
+          "type": "pod",
+          "x": 279,
+          "y": 9267,
+          "group": "encounter-30",
+          "phase": 0.4724032145759415,
+          "period": 6.052252730769499,
+          "asset": "pod-olive",
+          "side": "right",
+          "support": "support-right-low",
+          "falls": false,
+          "approach": 260,
+          "warning": 1.4,
+          "fallDrift": 5
+        },
+        {
+          "id": "flight-object-40",
+          "type": "bee",
+          "x": 65,
+          "y": 9517,
+          "group": "encounter-31",
+          "phase": 0.1160101744704698,
+          "period": 6.839118095410271,
+          "asset": "bee-left",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-41",
+          "type": "bee",
+          "x": 265,
+          "y": 9517,
+          "group": "encounter-31",
+          "phase": 0.9867348081160218,
+          "period": 7.8879332198844025,
+          "asset": "bee-right",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-42",
+          "type": "bramble",
+          "x": 1,
+          "y": 9799,
+          "group": "encounter-32",
+          "phase": 0.09933745079143386,
+          "period": 7.994548380328772,
+          "asset": "bramble-left-rise",
+          "side": "left"
+        },
+        {
+          "id": "flight-object-43",
+          "type": "bramble",
+          "x": 329,
+          "y": 9799,
+          "group": "encounter-32",
+          "phase": 0.12936284226919614,
+          "period": 6.982205875675587,
+          "asset": "bramble-right-rise",
+          "side": "right"
+        },
+        {
+          "id": "flight-object-44",
+          "type": "bee",
+          "x": 65,
+          "y": 10030,
+          "group": "encounter-33",
+          "phase": 0.731758823772616,
+          "period": 7.204459153022067,
+          "asset": "bee-left",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-object-45",
+          "type": "bee",
+          "x": 265,
+          "y": 10030,
+          "group": "encounter-33",
+          "phase": 0.652626549028738,
+          "period": 6.530412397647662,
+          "asset": "bee-right",
+          "left": -15,
+          "right": 15
+        },
+        {
+          "id": "flight-lyric-1",
+          "type": "lyric",
+          "asset": "lyric-fragment-11",
+          "x": 79.4656815785116,
+          "y": 1300.456508379016,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "flight-lyric-2",
+          "type": "lyric",
+          "asset": "lyric-fragment-12",
+          "x": 238.53984348662203,
+          "y": 2915.3283906679553,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "flight-lyric-3",
+          "type": "lyric",
+          "asset": "lyric-fragment-13",
+          "x": 236.2043959689414,
+          "y": 4823.86791318138,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "flight-lyric-4",
+          "type": "lyric",
+          "asset": "lyric-fragment-14",
+          "x": 232.75237048175586,
+          "y": 6396.18050679306,
+          "text": "",
+          "final": false
+        },
+        {
+          "id": "flight-lyric-5",
+          "type": "lyric",
+          "asset": "lyric-fragment-15",
+          "x": 82,
+          "y": 10170,
+          "text": "",
+          "final": true
+        }
+      ],
+      "sections": [
+        {
+          "id": "flight-section-0",
+          "name": "Meadow departure",
+          "y": 0,
+          "end": 342,
+          "weather": 0,
+          "wind": 0.3,
+          "type": "section"
+        },
+        {
+          "id": "flight-section-1",
+          "name": "Bramble weave",
+          "y": 342,
+          "end": 2394,
+          "weather": 0,
+          "wind": 0.3,
+          "type": "section"
+        },
+        {
+          "id": "flight-section-2",
+          "name": "Falling pods",
+          "y": 2394,
+          "end": 4104,
+          "weather": 0,
+          "wind": 0.3,
+          "type": "section"
+        },
+        {
+          "id": "flight-section-3",
+          "name": "Bee crossing",
+          "y": 4104,
+          "end": 5871,
+          "weather": 0,
+          "wind": 0.3,
+          "type": "section"
+        },
+        {
+          "id": "flight-section-4",
+          "name": "Crosswind rise",
+          "y": 5871,
+          "end": 8721,
+          "weather": 0,
+          "wind": 0.7,
+          "type": "section"
+        },
+        {
+          "id": "flight-section-5",
+          "name": "Upper crown",
+          "y": 8721,
+          "end": 9804,
+          "weather": 0,
+          "wind": 0.3,
+          "type": "section"
+        },
+        {
+          "id": "flight-section-6",
+          "name": "Last words",
+          "y": 9804,
+          "end": 10330,
+          "weather": 0,
+          "wind": 0.3,
+          "type": "section"
+        }
+      ],
+      "scenery": {
+        "clouds": true,
+        "terrain": true,
+        "water": true,
+        "trees": true,
+        "brush": true,
+        "birds": true,
+        "air": true,
+        "weather": true
+      },
+      "start": {
+        "x": 165,
+        "y": 337
+      },
+      "speed": 54.5,
+      "draft": false,
+      "ending": {
+        "x": 165,
+        "y": 10370
+      }
+    }
+  ],
+  "active": "820479ed-42e9-40eb-accb-9fa7390e9b0a",
+  "arrangements": []
+}

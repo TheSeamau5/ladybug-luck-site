@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>if(location.protocol==='file:'){document.documentElement.style.visibility='hidden';location.replace('http://127.0.0.1:8347/test/');}</script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0469ef">
+  <base href="/tools/level-editor/">
+  <title>Ladybug Luck · Editor</title>
+  <script>document.documentElement.dataset.entry=location.pathname.startsWith('/puzzle')?'puzzle':location.pathname.startsWith('/test')?'test':location.pathname.startsWith('/levels')?'levels':'editor';</script>
+  <link rel="stylesheet" href="style.css?v=pause-menu-1">
+  <link rel="stylesheet" href="puzzle.css?v=11" >
+  <link rel="stylesheet" href="campaign.css?v=phone-flow-1">
+</head>
+<body>
+<header id="editor-header">
+  <button id="levels-toggle">Levels</button><strong id="current-level"></strong><div class="spacer"></div>
+  <span id="saved" role="status">Loading your levels</span>
+  <button id="undo" title="Undo · ⌘Z">Undo</button><button id="redo" title="Redo · ⇧⌘Z">Redo</button><button id="preview" class="primary">Play</button>
+</header>
+<section id="level-drawer" hidden aria-label="Your levels">
+  <header class="levels-header"><div class="brand"><strong>LADYBUG LUCK</strong><span>LEVELS</span></div><div class="spacer"></div><button id="campaign-play" class="primary">Playtest</button><button id="add-level">New level</button></header>
+  <div class="levels-intro"><h1>Your levels</h1><p class="desktop-only">Drag cards to reorder.</p><p class="mobile-only">Swipe to browse. Hold a card to reorder.</p></div>
+  <div id="level-cards" aria-label="Level order"></div><p id="reorder-status" role="status" aria-live="polite"></p>
+  <div id="level-templates" class="template-sheet" hidden><div class="panel-heading"><h2>New level</h2><button id="templates-close">Close</button></div><div id="template-options"></div></div>
+  <footer class="levels-footer"><div><strong>Share a playtest</strong><p>Players open /test on a phone or computer.</p></div><button id="copy-test-link">Copy test link</button><button id="files-toggle" aria-expanded="false">Files</button></footer>
+</section>
+<div id="file-menu" class="floating" hidden>
+  <div class="panel-heading"><h2>Project files</h2><button id="files-close">Close</button></div>
+  <button id="export-game">Export all levels</button><button id="export-level">Export this level</button><button id="open-project">Open project</button><button id="import-level">Import level</button>
+  <p>Changes save in this browser. Export your levels to keep a copy or publish them with the game.</p>
+</div>
+<input id="file" type="file" accept=".json,application/json" hidden>
+<main id="editor-main">
+  <aside id="tray" hidden>
+    <div id="asset-drawer">
+      <div class="panel-heading"><h2>Objects</h2><button id="tray-hide">Hide</button></div>
+      <div id="palette" class="palette"></div>
+      <button id="select-several" class="wide-control" aria-pressed="false">Select several</button>
+    </div>
+    <div id="placement-actions" class="sheet-actions" hidden><button id="place-done" class="primary">Done</button></div>
+  </aside>
+  <section class="workspace">
+    <div class="stage-wrap">
+      <div id="stage">
+        <canvas id="backdrop" width="1320" height="2868" aria-hidden="true"></canvas>
+        <canvas id="canvas" width="1320" height="2868" tabindex="0" aria-label="Level scene. Drag objects to move. Drag empty space on a phone to scroll. Pinch to zoom."></canvas>
+        <div id="campaign-opening" hidden aria-hidden="true"><img id="opening-scene" alt=""><div id="opening-menu"><img id="opening-menu-art" alt=""></div></div>
+        <script id="opening-levels" type="application/json">[{"id":"820479ed-42e9-40eb-accb-9fa7390e9b0a","theme":"garden"},{"id":"b237b848-d16a-4548-915f-bf4c6a208be1","theme":"rain"},{"id":"bd0ab538-8c65-4eea-a201-017be93a143a","theme":"sunset"}]</script>
+        <script id="opening-colors" type="application/json">{"garden":[[4,105,239]],"rain":[[34,52,99],[19,32,70]],"sunset":[[35,146,255],[53,149,248]],"puzzle":[[67,60,84]]}</script>
+        <script>
+          (()=>{
+            if(document.documentElement.dataset.entry!=='test')return;
+            const levels=JSON.parse(document.getElementById('opening-levels').textContent);
+            let saved={};try{saved=JSON.parse(localStorage.getItem('ladybug-player-progress-v1')||'{}');}catch{}
+            const completed={};for(const [id,result] of Object.entries(saved?.completed||{}))if(result&&Number.isFinite(result.best))completed[id]=true;
+            const query=new URLSearchParams(location.search),index=Math.max(0,Number(query.get('level')||1)-1);
+            const requested=query.has('level')&&levels[index],allowed=requested&&(index===0||completed[requested.id]||completed[levels[index-1]?.id]);
+            const theme=(allowed?requested:levels.find(level=>!completed[level.id]))?.theme||'puzzle';
+            const base='assets/campaign/opening/'+theme;
+            const palette=JSON.parse(document.getElementById('opening-colors').textContent)[theme],mix=0;
+            const color='rgb('+palette[0].map((v,i)=>Math.round(v*(1-mix)+(palette[1]||palette[0])[i]*mix)).join(',')+')';
+            document.documentElement.style.setProperty('--game-sky',color);
+            document.querySelector('meta[name="theme-color"]').content=color;
+            document.body.classList.add('campaign');
+            document.getElementById('opening-scene').src=base+'-scene.png?v=leaf-joins-2';
+            document.getElementById('opening-menu-art').src=base+(saved?.playedOnce===true?'-returning.png':'-first.png')+'?v=opening-2';
+            document.getElementById('campaign-opening').hidden=false;
+          })();
+        </script>
+        <div id="placement-hint" hidden>Tap to place</div>
+        <div id="game-hud" hidden><span id="lyric-score"></span><span id="play-status"></span></div>
+        <div id="completion" hidden><strong>LEVEL COMPLETE</strong><span id="completion-score"></span><button id="completion-next" class="primary">Next level</button><button id="completion-restart">Play again</button><button id="completion-edit">Back to editor</button></div>
+        <div id="scene-loading" hidden>Loading artwork…</div>
+      </div>
+      <div class="overview-wrap"><canvas id="overview" width="100" height="717" tabindex="0" aria-label="Whole level. Drag to choose a height."></canvas><span id="overview-label">LEVEL</span></div>
+    </div>
+    <nav id="scene-tools" aria-label="Scene tools"><button id="add-objects">Add</button><label class="toggle-control"><input id="colliders-toggle" type="checkbox" role="switch"><span>Colliders</span></label><button id="extend">Extend up</button><button id="focus-view">Hide tools</button></nav>
+    <footer class="editor-footer"><button id="motion-toggle" aria-pressed="true">Pause scenery</button></footer>
+  </section>
+  <aside id="inspector" class="inspector" hidden>
+    <nav class="pair level-navigation" aria-label="Level navigation"><button id="go-start">Start</button><button id="go-end">End</button></nav>
+    <div class="panel-heading"><h2 id="selection-title">Select an object</h2><button id="inspector-hide">Hide</button></div>
+    <div id="collider-tools" hidden><span class="collider-legend"><span class="hazard-key">Obstacles</span><span class="platform-key">Landings / lyrics</span><span class="player-key">Player</span></span><button id="player-collider">Player collider</button></div>
+    <div id="selection-tabs" class="tabs" hidden><button id="motion-tab">Motion</button><button id="collider-tab">Collider</button></div>
+    <div id="selection-actions" class="pair" hidden><button id="duplicate">Copy</button><button id="flip" title="Flip horizontally">Flip</button><button id="delete">Delete</button></div>
+    <div id="properties"></div><div id="object-list"></div>
+    <div id="encounter-controls" hidden><label for="encounter-time">Motion</label><input id="encounter-time" type="range" min="0" max="12" step="0.025" value="0"><button id="encounter-replay">Replay</button></div>
+    <div class="sheet-actions mobile-only"><button id="selection-done" class="primary">Done</button></div>
+  </aside>
+</main>
+<p id="notice" role="status" aria-live="polite"></p><button id="restore-tools" hidden>Tools</button>
+<div id="play-controls" hidden><button id="edit-here">Back to edit</button><strong id="play-title"></strong><div class="spacer"></div><button id="restart">Restart</button><button id="pause-play">Pause</button></div>
+<p id="keyboard-help" hidden></p><button id="mobile-pause" hidden>Pause</button>
+<div id="pause-panel" role="dialog" aria-modal="true" aria-labelledby="pause-title" hidden>
+  <div class="pause-sheet">
+    <h1 id="pause-title">Pause</h1>
+    <div id="pause-editor-details" class="pause-editor-group" hidden><p id="pause-level"></p><div class="tabs" aria-label="Steering mode"><button id="tilt-mode" aria-pressed="false">Centre phone</button></div><p id="touch-help"></p><p id="control-notice" role="status"></p></div>
+    <button id="resume-play" class="primary">Resume</button>
+    <button id="pause-restart">Restart</button>
+    <button id="pause-main-menu">Main menu</button>
+    <div id="pause-editor-actions" class="pause-editor-group" hidden><button id="full-play">Play from start</button><button id="pause-edit">Back to edit</button><button id="pause-levels">Levels</button></div>
+  </div>
+</div>
+<div id="test-start" hidden><div class="pause-sheet"><strong>LADYBUG LUCK</strong><h1 id="test-level-name"></h1><p id="test-help"></p><button id="test-begin" class="primary" disabled>Loading artwork…</button><button id="test-levels">Choose a level</button></div></div>
+<script src="assets/leaf-material.js?v=4"></script><script src="assets/catalog.js?v=flower-landings-detail-1"></script>
+<script src="scene.js?v=phone-flow-1"></script><script src="colliders.js?v=flower-landings-detail-1"></script><script src="paper.js?v=phone-flow-1"></script><script src="editor.js?v=leaf-joins-2"></script><script src="play.js?v=flower-landings-detail-1"></script><script src="puzzle-scenery.js?v=2"></script><script src="puzzle.js?v=pause-menu-1"></script><script src="campaign.js?v=leaf-joins-2"></script><script src="interface.js?v=phone-motion-2"></script>
+</body>
+</html>
