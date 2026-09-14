@@ -247,7 +247,7 @@ window.addEventListener('deviceorientation',e=>{
   tiltSteering=0;if(now-tiltSample.start<250)return;
   tiltZero=tiltSample.mean;$('control-notice').textContent='Tilt is centred. Lean left or right to steer.';
  }
- const lean=tiltZero-value;
+ const lean=value-tiltZero;
  tiltSteering=Math.sign(lean)*clamp((Math.abs(lean)-2.5)/15.5);
 });
 window.addEventListener('orientationchange',releaseTouch);
