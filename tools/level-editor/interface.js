@@ -238,8 +238,13 @@ async function enableTilt(){
 uiButton('tilt-mode',enableTilt);
 window.addEventListener('deviceorientation',e=>{
  if(!tiltEnabled||inputMode!=='tilt'||!Number.isFinite(e.gamma)||!Number.isFinite(e.beta))return;
- const angle=(window.screen?.orientation?.angle??window.orientation??0)*Math.PI/180;
- const value=e.gamma*Math.cos(angle)+e.beta*Math.sin(angle);
+ const radians=Math.PI/180,angle=(window.screen?.orientation?.angle??window.orientation??0)*radians;
+ const beta=e.beta*radians,gamma=e.gamma*radians;
+ // Project gravity onto the screen's right axis. Raw gamma reverses across
+ // an upright pitch; physical clockwise lean must keep steering right.
+ // https://www.w3.org/TR/orientation-event/#worked-example
+ const right=Math.cos(beta)*Math.sin(gamma)*Math.cos(angle)+Math.sin(beta)*Math.sin(angle);
+ const value=Math.asin(Math.max(-1,Math.min(1,right)))/radians;
  const now=performance.now();tiltLastSignal=now;
  if(tiltZero===null){
   if(!tiltSample)tiltSample={start:now,mean:value,count:1};
