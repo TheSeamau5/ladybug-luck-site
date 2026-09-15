@@ -64,7 +64,7 @@ const Campaign = {
     document.querySelector('meta[name="theme-color"]').content=color;
   },
   lyrics(level=state){return level.objects.filter(o=>o.type==='lyric'&&!o.hidden).sort((a,b)=>a.asset.localeCompare(b.asset));},
-  rewardPath(asset,size,status){return this.base+size+'/fragment-'+asset.slice(-2)+'-'+status+'.png';},
+  rewardPath(asset,size,status){return this.base+size+'/fragment-'+asset.slice(-2)+'-'+status+'.png?v='+LyricPaper.revision;},
   prepareArt(){
     const level=this.menuLevel||state,rain=level.theme==='rain',flight=level.mode==='flight';
     const previousOwner=Art.owner;Art.owner=level.id;
@@ -720,7 +720,7 @@ const Campaign = {
       [240,285,96],[236,79,-16],[69,293,-121],[274,246,-67],[141,62,139]
     ];
     LyricPaper.names.filter(id=>owned.has(id)).forEach((id,index)=>{
-      const source=Art.pixels('assets/puzzle/fragment-'+id.slice(-2)+'.png');if(!source)return;
+      const source=Art.pixels('assets/puzzle/fragment-'+id.slice(-2)+'.png?v='+LyricPaper.revision);if(!source)return;
       const [px,py,degrees]=pile[index],angle=degrees*Math.PI/180,c=Math.cos(angle),s=Math.sin(angle);
       const w=Math.ceil(Math.abs(c)*source.w+Math.abs(s)*source.h),h=Math.ceil(Math.abs(s)*source.w+Math.abs(c)*source.h);
       const canvas=document.createElement('canvas');canvas.width=w;canvas.height=h;

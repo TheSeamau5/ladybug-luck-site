@@ -63,7 +63,7 @@ class LyricAssembly {
       centre:{x:(left+right)/2,y:(top+bottom)/2},bounds:{left,top,right,bottom}};
   }
   constructor(catalog,owned,saved={}) {
-    saved=saved?.layout===3?saved:{};
+    saved=saved?.layout===4?saved:{};
     this.catalog=catalog;this.selected=null;this.solved=false;this.shine=-1;this.repair=null;this.repaired=false;
     // Uneven, overlapping handful of paper: deliberately no rows or columns.
     const scatter=[
@@ -115,7 +115,7 @@ class LyricAssembly {
     // Once the success animation starts, leaving midway preserves its finished
     // pose. Reopening cannot strand a half-repaired or partly centred page.
     const centre=this.repair?.centre;
-    return {layout:3,repaired:this.repaired||!!this.repair,pieces:Object.fromEntries(this.pieces.map(p=>[p.id,
+    return {layout:4,repaired:this.repaired||!!this.repair,pieces:Object.fromEntries(this.pieces.map(p=>[p.id,
       centre?{x:165+p.cx-centre.x,y:358.5+p.cy-centre.y,angle:0}:{x:p.x,y:p.y,angle:p.angle}]))};
   }
   finish(time,art){
@@ -198,8 +198,8 @@ const PuzzleLevel = {
   async load(){
     if(this.loading)return this.loading;
     this.loading=(async()=>{
-      const response=await fetch('assets/puzzle/pieces.json');if(!response.ok)throw new Error('Puzzle artwork could not load');this.catalog=await response.json();
-      await Promise.all(this.catalog.pieces.map(p=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>{const c=document.createElement('canvas');c.width=p.width;c.height=p.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(image,0,0);const pixels=g.getImageData(0,0,c.width,c.height).data;g.globalCompositeOperation='source-in';g.fillStyle='#061324';g.fillRect(0,0,c.width,c.height);this.art[p.id]={image,pixels,shadow:c};resolve();};image.onerror=reject;image.src='assets/puzzle/'+p.image;})));
+      const response=await fetch('assets/puzzle/pieces.json?v='+LyricPaper.revision);if(!response.ok)throw new Error('Puzzle artwork could not load');this.catalog=await response.json();
+      await Promise.all(this.catalog.pieces.map(p=>new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>{const c=document.createElement('canvas');c.width=p.width;c.height=p.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(image,0,0);const pixels=g.getImageData(0,0,c.width,c.height).data;g.globalCompositeOperation='source-in';g.fillStyle='#061324';g.fillRect(0,0,c.width,c.height);this.art[p.id]={image,pixels,shadow:c};resolve();};image.onerror=reject;image.src='assets/puzzle/'+p.image+'?v='+LyricPaper.revision;})));
       LyricAssembly.prepareSeams(this.catalog,this.art);
       this.sunset=await PuzzleSunset.load($('puzzle-background'));
     })().catch(error=>{this.loading=null;console.error('Puzzle artwork load failed',error);throw error;});return this.loading;

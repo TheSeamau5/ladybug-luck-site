@@ -2,6 +2,7 @@
 
 // The miniature and the puzzle piece share their original, unaltered ink.
 const LyricPaper = {
+  revision:'zia-austen-uneven-1',
   names: Array.from({length:15}, (_,i)=>'lyric-fragment-'+String(i+1).padStart(2,'0')),
   frames: new Map(),
   seed(id){let n=2166136261;for(const c of id)n=Math.imul(n^c.charCodeAt(0),16777619);return (n>>>0)%10007;},
